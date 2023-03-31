@@ -1,0 +1,144 @@
+.header35 {
+  position: relative;
+  /* left: 34.73%;
+  right: 40.73%; */
+  top: 212px;
+  bottom: 59.96%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 42px;
+  color: #000000;
+  width: 100%;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .header35 {
+    /* left: 29.73%; */
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .header35 {
+    /* left: 36.73%; */
+  }
+}
+
+.jkl {
+  position: relative;
+  width: 69px;
+  height: 69px;
+  left: -3px;
+  top: 210px;
+  display: block;
+  margin: auto;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .jkl {
+    left: 0px;
+    top: 204px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .jkl {
+    left: -4px;
+    top: 204px;
+  }
+}
+
+.input {
+  position: relative;
+  width: 455px;
+  height: 79px;
+  /* left: 732px; */
+  top: 270px;
+  left: 257px;
+  display: block;
+  margin: auto;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .input {
+    left: -5%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .input {
+    left: 210px;
+    top: 279px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1200px) {
+  .input {
+    left: 255px;
+  }
+}
+
+/* .Btn {
+  
+
+} */
+/* .in{
+    box-sizing: border-box;
+
+position: absolute;
+left: 38.12%;
+right: 38.18%;
+top: 43.95%;
+bottom: 52.15%;
+
+background: #FFFFFF;
+border: 1px solid #C5C5C5;
+border-radius: 3px 3px 0px 0px;
+} */
+
+.in {
+  width: 81%;
+  position: relative;
+  left: 7%;
+  height: 40px;
+  background: #ffffff;
+  border: 1px solid #c5c5c5;
+  border-radius: 3px 3px 0px 0px;
+  padding: 20px;
+}
+
+.upperin {
+  margin-top: -19px;
+  margin-bottom: 0px;
+}
+.downin {
+}
+.forgot {
+  display: block;
+  margin: auto;
+  position: relative;
+
+  top: 411px;
+  left: -449px;
+  /* top: 630px; */
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .forgot {
+    left: -24%;
+    top: 359px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .forgot {
+    left: -42%;
+    top: 410px;
+  }
+}
+
+.forgot a {
+  color: #0080c8 !important;
+  font-weight: 400;
+}
+.sizing {
+  /* overflow: hidden; */
+  size: 100%;
+  text-align: center;
+}

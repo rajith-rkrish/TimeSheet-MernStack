@@ -1,0 +1,161 @@
+.center {
+  position: absolute;
+  width: 73vw;
+  /* min-width: 547px; */
+  height: 735px;
+  left: -55%;
+  top: 72px;
+  /* min-width: 700px; */
+  background: #f1f3f4;
+  box-shadow: 0px 3px 3px rgba(149, 157, 165, 0.25);
+  border-radius: 6px;
+  /* transform: translate(-50%,-50%); */
+  place-items: center;
+  margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+  .center {
+    left: -65%;
+  }
+}
+
+.flex {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+/* .grid {
+  display: grid;
+  place-items: center;
+} */
+.dropdowns {
+  background-color: #fff !important;
+  height: 35px !important;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.whightbox {
+  box-sizing: border-box;
+  /* position: absolute; */
+  /* width: 973px; */
+  height: 500px;
+  left: 1568px;
+  top: 711px;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 0px 0px 0px 0px;
+  /* transform: rotate(180deg); */
+  display: flex;
+  flex-flow: row;
+  place-items: center;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 65vw;
+  /* padding: 20px; */
+  /* margin: 10px auto;*/
+  overflow: auto;
+}
+.Headings {
+  box-sizing: border-box;
+  position: relative;
+  width: 21.7vw;
+  height: 72.08px;
+  left: 0px;
+  top: -213px;
+  background: #e4eaee;
+  border: 1px solid #d9d9d9;
+  border-radius: 7px 0px 0px 0px px;
+  display: flex;
+  /* flex-flow: row; */
+  /* align-content: space-between; */
+  justify-content: center;
+  align-items: baseline;
+  /* flex-direction: column-reverse; */
+  flex-wrap: wrap;
+}
+.labels {
+  margin-top: -10px;
+}
+.headerDate {
+  position: absolute;
+  width: 175px;
+  height: 44px;
+  left: 3px;
+  top: -51px;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  color: #2b2b2b;
+  padding: 10px;
+}
+.Dashheader {
+  position: absolute;
+  width: 94px;
+  height: 22px;
+  left: 75px;
+  top: 60px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #2b2b2b;
+}
+.cals {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 31px;
+  top: 12px;
+}
+.CrDate {
+  position: absolute;
+  left: 60px;
+  bottom: 8px;
+  font-weight: 550;
+}
+.TotalTimeHeader {
+  position: absolute;
+  width: 81px;
+  height: 18.26px;
+  /* left: 167px; */
+  top: 10px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #505558;
+}
+.project_name {
+  position: absolute;
+  top: 10px;
+  color: #505558;
+  font-weight: 600;
+}
+.Client_Name {
+  position: absolute;
+  top: 10px;
+  color: #505558;
+  font-weight: 600;
+}
+.output_value {
+  position: absolute;
+  top: 35px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #505558;
+  text-align: center;
+}
+.displayFlex {
+  display: flex;
+  flex-flow: row;
+  position: absolute;
+}

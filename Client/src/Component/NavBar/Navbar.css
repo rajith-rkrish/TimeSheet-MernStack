@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Montserrat+Alternates:wght@300&family=Montserrat:wght@200;300&display=swap");
+.vertical {
+  position: absolute;
+  width: 223px;
+  height: 1041px;
+  left: 9px;
+  top: 0px;
+  background: #f1f3f4;
+}
+@media (min-width: 768px) {
+  .vertical {
+    width: 194px;
+  }
+}
+
+@media (min-width: 1601px) {
+  .vertical {
+    width: 223px;
+  }
+}
+.TimeSheet {
+  width: 93px;
+  height: 21px;
+  /* font-family: "Inter"; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 21px;
+  /* identical to box height */
+  color: #191a1b;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  /* margin-top: 5px;
+  margin-left: 5px; */
+  position: relative;
+  bottom: 24px;
+  left: 36px;
+}
+.timeStatus {
+  width: 93px;
+  height: 21px;
+  /* font-family: "Inter"; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 21px;
+  /* identical to box height */
+  color: #191a1b;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  /* margin-top: 5px;
+  margin-left: 5px; */
+  position: relative;
+  bottom: 24px;
+  left: 36px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.jklpic {
+  width: 127px;
+  /* margin-left: 15px; */
+  /* margin-bottom: 2px; */
+  position: relative;
+  left: 42px;
+  bottom: 21px;
+}
+.flexer {
+  display: flex;
+  flex-flow: row;
+}
+.margintop {
+  margin-top: 55px;
+}
+.cursor {
+  cursor: pointer;
+}
+.hambur {
+  /* margin-left: 20px; */
+  margin-top: -2px;
+  width: 29px;
+  height: 19px;
+}
+.timeImg {
+  width: 30px;
+  height: 30px;
+}
+.StatusImg {
+  /* margin-right: 10px;
+  margin-top: -2px; */
+  width: 30px;
+  height: 30px;
+}
+.timesheetBody {
+  /* margin-left: 4px; */
+  margin-left: -14px;
+  /* width: 106%; */
+  width: 222px;
+  /* height: 44px;*/
+  height: 50px;
+  padding: 10px;
+  padding-left: 15px;
+}
+
+.timesheetBody:hover {
+  background-color: #c5eaff;
+}
+.timestatusBody {
+  margin-left: -16px;
+  /* width: 106%; */
+  width: 222px;
+  height: 44px;
+  height: 50px;
+  padding: 10px;
+  padding-left: 15px;
+}
+.timestatusBody:hover {
+  background-color: #c5eaff;
+}
+.leftBlue {
+  position: absolute;
+  width: 20px;
+  height: 1041px;
+  left: -19px;
+  top: 0px;
+  background: #00a3ff;
+}
+/* .leftBlue::after {
+  position: absolute;
+  width: 223px;
+  height: 1001px;
+  left: 0px;
+  top: 0px;
+  background: #f1f3f4;
+} */

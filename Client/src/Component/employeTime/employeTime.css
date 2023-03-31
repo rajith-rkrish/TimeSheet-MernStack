@@ -1,0 +1,721 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;700&family=Montserrat+Alternates:wght@300&display=swap");
+.cont {
+  position: absolute;
+  width: 1309px;
+  height: 724px;
+  left: 465px;
+  top: 130px;
+  background: #f1f3f4;
+  box-shadow: 0px 3px 3px rgb(149 157 165 / 25%);
+  border-radius: 6px;
+  display: block;
+  margin: auto;
+  margin-left: 63px;
+
+  overflow: scroll !important;
+  padding-bottom: 20px !important;
+}
+
+@media (min-width: 768px) and(max-width:829px) {
+  .cont {
+    width: 500px;
+    /* left: 254px; */
+    margin-left: 6px;
+
+    left: 230px;
+  }
+}
+@media (min-width: 830px) and(max-width:991px) {
+  .cont {
+    width: 558px;
+    /* left: 254px; */
+    margin-left: 6px;
+
+    left: 230px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .cont {
+    width: 720px;
+    /* left: 254px; */
+    margin-left: 6px;
+
+    left: 230px;
+  }
+}
+@media (min-width: 1200px) {
+  .cont {
+    width: 830px;
+
+    margin-left: 6px;
+    left: 300px;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1600px) {
+  .cont {
+    width: 990px;
+  }
+}
+@media (min-width: 1601px) {
+  .cont {
+    position: absolute;
+    width: 1309px;
+    height: 724px;
+    left: 465px;
+    top: 130px;
+    background: #f1f3f4;
+    box-shadow: 0px 3px 3px rgb(149 157 165 / 25%);
+    border-radius: 6px;
+    display: block;
+    margin: auto;
+    margin-left: 63px;
+
+    overflow: overlay;
+    padding-bottom: 20px !important;
+  }
+}
+.Cdate {
+  position: absolute;
+  width: 170px;
+  height: 44px;
+  left: 529px;
+  top: 55px;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+}
+@media (min-width: 768px) and(max-width:829px) {
+  .Cdate {
+    left: 263px;
+  }
+}
+.Cimg {
+  position: absolute;
+  left: 12.5%;
+  right: 12.5%;
+  top: 16.67%;
+  bottom: 8.33%;
+  /* border: 1.5px solid #161717; */
+  width: 15px;
+  height: 15px;
+}
+.flexer {
+  display: flex;
+  flex-flow: column;
+}
+.dateLetter {
+  position: absolute;
+  width: 90px;
+  height: 19px;
+  left: 55px;
+  top: 12px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 16px;
+  line-height: 19px;
+  color: #161717;
+}
+.tableHeader {
+  box-sizing: border-box;
+  position: absolute;
+  width: 1158px;
+  height: 42px;
+  left: 74px;
+  top: 75px;
+  background: #e4eaee;
+  border: 1px solid #d9d9d9;
+  border-radius: 7px 7px 0px 0px;
+}
+@media (min-width: 768px) and(max-width:829px) {
+  .tableHeader {
+    width: 465px;
+    left: 15px;
+  }
+}
+@media (min-width: 830px) and(max-width:991px) {
+  .tableHeader {
+    width: 465px;
+    left: 40px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .tableHeader {
+    width: 600px;
+    left: 60px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .tableHeader {
+    width: 695px;
+    left: 60px;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1600px) {
+  .tableHeader {
+    width: 770px;
+    left: 100px;
+  }
+}
+
+@media (min-width: 1601px) {
+  .tableHeader {
+    box-sizing: border-box !important;
+    position: absolute !important;
+    width: 1158px !important;
+    height: 42px !important;
+    left: 74px !important;
+    top: 75px !important;
+    background: #e4eaee !important;
+    border: 1px solid #d9d9d9 !important;
+    border-radius: 7px 7px 0px 0px !important;
+  }
+}
+
+.table {
+}
+
+.tableinput1 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 1035px;
+  height: 50px;
+  left: 74px;
+  top: 117px;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 0px;
+}
+@media (min-width: 768px) and(max-width:829px) {
+  .tableinput1 {
+    width: 400px;
+    left: 16px;
+  }
+}
+@media (min-width: 830px) and(max-width:991px) {
+  .tableinput1 {
+    left: 40px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .tableinput1 {
+    width: 513px;
+    left: 60px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .tableinput1 {
+    width: 575px;
+    left: 60px;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1600px) {
+  .tableinput1 {
+    width: 683px;
+    left: 100px;
+  }
+}
+@media (min-width: 1601px) {
+  .tableinput1 {
+    box-sizing: border-box !important;
+    position: absolute !important;
+    width: 1035px !important;
+    height: 50px !important;
+    left: 74px !important;
+    top: 117px !important;
+    background: #ffffff !important;
+    border: 1px solid #d9d9d9 !important;
+    border-radius: 0px !important;
+  }
+}
+
+.tablecounter {
+  box-sizing: border-box;
+  position: absolute;
+  width: 123px;
+  height: 50px;
+  left: 1109px;
+  top: 117px;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 0px;
+}
+@media (min-width: 768px) and(max-width:829px) {
+  .tablecounter {
+    width: 68px;
+    left: 413px;
+  }
+}
+@media (min-width: 830px) and(max-width:991px) {
+  .tablecounter {
+    width: 68px;
+    left: 437px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .tablecounter {
+    width: 88px;
+    left: 572px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .tablecounter {
+    /* width: 88px; */
+    left: 632px;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1600px) {
+  .tablecounter {
+    /* width: 88px; */
+    left: 782px;
+  }
+}
+
+@media (min-width: 1601px) {
+  .tablecounter {
+    box-sizing: border-box !important;
+    position: absolute !important;
+    width: 123px !important;
+    height: 50px !important;
+    left: 1109px !important;
+    top: 117px !important;
+    background: #ffffff !important;
+    border: 1px solid #d9d9d9 !important;
+    border-radius: 0px !important;
+  }
+}
+.tablecounter1 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 123px;
+  height: 50px;
+  left: 1109px;
+  top: 166px;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 0px;
+}
+@media (min-width: 768px) and(max-width:829px) {
+  .tablecounter1 {
+    width: 68px;
+    left: 413px;
+  }
+}
+@media (min-width: 830px) and(max-width:991px) {
+  .tablecounter1 {
+    width: 68px;
+    left: 437px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .tablecounter1 {
+    width: 88px;
+    left: 572px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .tablecounter1 {
+    /* width: 88px; */
+    left: 632px;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1600px) {
+  .tablecounter1 {
+    left: 782px;
+  }
+}
+@media (min-width: 1601px) {
+  .tablecounter1 {
+    box-sizing: border-box !important;
+    position: absolute !important;
+    width: 123px !important;
+    height: 50px !important;
+    left: 1109px !important;
+    top: 166px !important;
+    background: #ffffff !important;
+    border: 1px solid #d9d9d9 !important;
+    border-radius: 0px !important;
+  }
+}
+.tablecounter2 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 123px;
+  height: 52px;
+  left: 1109px;
+  top: 214px;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 0px 0px 8px 0px;
+}
+@media (min-width: 768px) and(max-width:829px) {
+  .tablecounter2 {
+    width: 68px;
+    left: 413px;
+  }
+}
+@media (min-width: 830px) and(max-width:991px) {
+  .tablecounter2 {
+    left: 437px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .tablecounter2 {
+    width: 88px;
+    left: 572px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .tablecounter2 {
+    /* width: 88px; */
+    left: 632px;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1600px) {
+  .tablecounter2 {
+    /* width: 88px; */
+    left: 782px;
+  }
+}
+@media (min-width: 1601px) {
+  .tablecounter2 {
+    box-sizing: border-box !important;
+    position: absolute !important;
+    width: 123px !important;
+    height: 52px !important;
+    left: 1109px !important;
+    top: 214px !important;
+    background: #ffffff !important;
+    border: 1px solid #d9d9d9 !important;
+    border-radius: 0px 0px 8px 0px !important;
+  }
+}
+.tableinput2 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 1035px;
+  height: 50px;
+  left: 74px;
+  top: 166px;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 0px;
+}
+@media (min-width: 768px) and(max-width:829px) {
+  .tableinput2 {
+    width: 400px;
+    left: 16px;
+  }
+}
+@media (min-width: 830px) and(max-width:991px) {
+  .tableinput2 {
+    left: 40px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .tableinput2 {
+    width: 513px;
+    left: 60px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .tableinput2 {
+    width: 575px;
+    left: 60px;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1600px) {
+  .tableinput2 {
+    width: 683px;
+    left: 100px;
+  }
+}
+@media (min-width: 1601px) {
+  .tableinput2 {
+    box-sizing: border-box !important;
+    position: absolute !important;
+    width: 1035px !important;
+    height: 50px !important;
+    left: 74px !important;
+    top: 166px !important;
+    background: #ffffff !important;
+    border: 1px solid #d9d9d9 !important;
+    border-radius: 0px !important;
+  }
+}
+
+.tableFooter {
+  box-sizing: border-box;
+  position: absolute;
+  width: 1035px;
+  height: 50px;
+  left: 74px;
+  top: 216px;
+  background: #e4eaee;
+  border: 1px solid #d9d9d9;
+  /* border-radius: 0px; */
+  border-radius: 0px 0px 0px 8px;
+}
+@media (min-width: 768px) and(max-width:829px) {
+  .tableFooter {
+    width: 466px;
+    left: 15px;
+  }
+}
+@media (min-width: 830px) and(max-width:991px) {
+  .tableFooter {
+    width: 400px;
+    left: 40px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .tableFooter {
+    width: 512px;
+    left: 60px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .tableFooter {
+    /* width: 512px; */
+    width: 573px;
+    left: 60px;
+  }
+}
+@media (min-width: 1400px) and(max-width:1600px) {
+  .tableFooter {
+    width: 683px;
+    left: 100px;
+  }
+}
+@media (min-width: 1601px) {
+  .tableFooter {
+    box-sizing: border-box !important;
+    position: absolute !important;
+    width: 1035px !important;
+    height: 50px !important;
+    left: 74px !important;
+    top: 216px !important;
+    background: #e4eaee !important;
+    border: 1px solid #d9d9d9 !important;
+    /* border-radius: 0px; */
+    border-radius: 0px 0px 0px 8px !important;
+  }
+}
+.projectHeader {
+  box-sizing: border-box;
+  position: absolute;
+  width: 1158px;
+  height: 42px;
+  left: 74px;
+  top: 420px;
+  background: #e4eaee;
+  border: 1px solid #d9d9d9;
+  border-radius: 7px 7px 0px 0px;
+}
+@media (min-width: 768px) and(max-width:829px) {
+  .projectHeader {
+    left: 15px;
+    width: 465px;
+  }
+}
+@media (min-width: 830px) and(max-width:991px) {
+  .projectHeader {
+    width: 465px;
+    left: 40px;
+  }
+}
+@media (min-width: 992px) and(max-width:1199px) {
+  .projectHeader {
+    width: 600px;
+    left: 60px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .projectHeader {
+    width: 697px;
+    left: 60px;
+  }
+}
+@media (min-width: 1400px) and(max-width:1600px) {
+  .projectHeader {
+    width: 770px;
+    left: 100px;
+  }
+}
+@media (min-width: 1601px) {
+  .projectHeader {
+    box-sizing: border-box !important;
+    position: absolute !important;
+    width: 1158px !important;
+    height: 42px !important;
+    left: 74px !important;
+    top: 420px !important;
+    background: #e4eaee !important;
+    border: 1px solid #d9d9d9 !important;
+    border-radius: 7px 7px 0px 0px !important;
+  }
+}
+.projectInput {
+  box-sizing: border-box;
+  position: absolute;
+  width: 1035px;
+  height: 52px;
+  left: 74px;
+  top: 462px;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 0px;
+}
+
+.projectCounter {
+  box-sizing: border-box;
+  position: absolute;
+  width: 123px;
+  height: 52px;
+  left: 1109px;
+  top: 462px;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 0px 0px 8px 0px;
+}
+@media (min-width: 768px) and(max-width:829px) {
+  .projectCounter {
+    width: 68px !important;
+    left: 413px !important;
+  }
+}
+@media (min-width: 830px) and (max-width: 991px) {
+  .projectCounter {
+    left: 437px !important;
+  }
+}
+@media (min-width: 992px) and(max-width:1199px) {
+  .projectCounter {
+    /* left: 436px !important; */
+    width: 88px !important;
+    left: 572px !important;
+  }
+}
+@media (min-width: 1200px) and(max-width:1400px) {
+  .projectCounter {
+    left: 632px !important;
+  }
+}
+@media (min-width: 1400px) and(max-width:1600px) {
+  .projectCounter {
+    left: 782px !important;
+  }
+}
+@media (min-width: 1601px) {
+  .projectCounter {
+    box-sizing: border-box !important;
+    position: absolute !important;
+    width: 123px !important;
+    height: 52px !important;
+    left: 1109px !important;
+    top: 462px !important;
+    background: #ffffff !important;
+    border: 1px solid #d9d9d9 !important;
+    border-radius: 0px 0px 8px 0px !important;
+  }
+}
+.react-ios-time-picker-input {
+  position: relative;
+  left: 730px;
+  top: 11px;
+  width: 76px;
+  height: 25px;
+}
+@media (min-width: 768px) and(max-width:991px) {
+  .react-ios-time-picker-input {
+    left: 141px;
+    font-size: 14px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .react-ios-time-picker {
+    margin-left: -679px;
+  }
+}
+@media (min-width: 1601px) {
+  .react-ios-time-picker {
+    margin-left: 0px !important;
+    left: 730px !important;
+  }
+}
+
+.logout {
+  position: relative;
+  top: 139px;
+  left: 166px;
+  margin-top: -165px;
+  width: 52%;
+}
+.react-ios-time-picker-main {
+  width: 50%;
+}
+
+.react-ios-time-picker-container {
+  background-color: #f8f9fa !important;
+}
+.react-ios-time-picker-selected-overlay {
+  background-color: #007bff !important;
+}
+
+.react-ios-time-picker-cell-inner-minute:hover {
+  background-color: rgb(0 123 255 / 50%);
+}
+.react-ios-time-picker-btn-container {
+  background-color: #e4eaee !important;
+  border-bottom: 1px solid #f7f7f7 !important;
+}
+.react-ios-time-picker-btn {
+  color: #007bff !important;
+}
+.react-ios-time-picker-cell-inner-hour:hover {
+  background-color: rgb(0 123 255 / 34%) !important;
+}
+.react-ios-time-picker-cell-inner-minute:hover {
+  background-color: rgb(0 123 255 / 34%) !important;
+}
+.react-ios-time-picker-popup {
+  position: relative !important;
+  top: 344px !important;
+  bottom: 0 !important;
+  left: 398px !important;
+}
+.react-ios-time-picker {
+  box-shadow: 0 2px 14px -6px #0005 !important;
+}
+@media (min-width: 768px) {
+  .react-ios-time-picker {
+    margin-left: -541px;
+  }
+}
+
+.react-ios-time-picker-btn-cancel {
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "Inter";
+}
+.react-ios-time-picker-btn {
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "Inter";
+}
+.react-ios-time-picker-input {
+  text-align: center !important;
+}
+.row {
+}
+@media (min-width: 768px) and (max-width: 830px) {
+  .row {
+    margin-right: 0px;
+  }
+}
+/* .Toastify__progress-bar--warning {
+  background-color: #00a3ff !important;
+}
+svg {
+  fill: #00a3ff !important;
+} */

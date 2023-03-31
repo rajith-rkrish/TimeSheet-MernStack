@@ -1,0 +1,61 @@
+.sorter {
+  display: flex;
+  flex-flow: row;
+  background-color: #e4eaee;
+}
+.Drop1 {
+  width: 123px;
+  height: 42px;
+}
+.Drop2 {
+  width: 178px;
+  height: 42px;
+}
+.Drop3 {
+  width: 104px;
+  height: 42px;
+}
+.firstbox {
+}
+.firstHeader {
+}
+.planDiv {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 571px;
+  height: 42px;
+  left: 997px;
+  top: 205px;
+
+  background: #e4eaee;
+  border: 1px solid #d9d9d9;
+  border-radius: 0px 7px 7px 0px;
+}
+.BluButton {
+  position: absolute;
+  /* left: 14.11%; */
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+
+  background: #00a3ff;
+  border-radius: 0px 6px 6px 0px;
+
+  width: 140px;
+  height: 40px;
+  left: 43px;
+}
+.fontBlue {
+  position: absolute;
+  left: 13.67%;
+  right: 15.95%;
+  top: 27.5%;
+  bottom: 25%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}

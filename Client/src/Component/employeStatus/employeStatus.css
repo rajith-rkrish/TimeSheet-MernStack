@@ -1,0 +1,73 @@
+.tableinputs {
+  box-sizing: border-box;
+  position: relative;
+  width: 870px;
+  height: 50px;
+  left: 74px;
+  top: 117px;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 0px;
+  /* margin-top: 10px; */
+  margin-bottom: -45px;
+}
+.tablecounter5 {
+  box-sizing: border-box;
+  position: relative;
+  width: 289px;
+  height: 50px;
+  left: 943px;
+  top: 112px;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 0px;
+}
+
+.cdater {
+  position: absolute;
+  width: 170px;
+  height: 44px;
+  left: 529px;
+  top: 55px;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.rdrDateRangePickerWrapper {
+  display: inline-flex !important;
+  position: relative !important;
+  top: 23px !important;
+  z-index: 1 !important;
+  left: -21px !important;
+  box-shadow: 0px 3px 3px rgb(149 157 165 / 25%) !important;
+}
+/* .rdrDateRangePickerWrapperss {
+    display: none !important;
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    user-select: none !important;
+    position: relative !important;
+    top: -30px !important;
+    z-index: 1 !important;
+    left: -28px;
+} */
+
+.currentDate {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 16px;
+  line-height: 19px;
+  color: #161717;
+}
+.blue {
+  color: #00a3ff !important;
+}
+.green {
+  color: green !important;
+}
+.red {
+  color: red !important;
+}

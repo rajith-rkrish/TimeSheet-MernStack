@@ -1,0 +1,43 @@
+.marginTop {
+  margin-top: 100px;
+}
+
+.css-q8hpuo-MuiFormControl-root {
+  width: 118px !important;
+  margin-left: 0px !important;
+  margin-top: 0px !important;
+}
+.css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
+  height: 50px;
+}
+
+
+/* .projectInput {
+  box-sizing: border-box;
+  position: relative;
+  width: 1035px;
+  height: 52px;
+  left: 74px;
+  top: 445px;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 0px;
+} */
+
+.css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
+  border-radius: 0px;
+}
+.margin20px {
+  margin: 20px !important;
+}
+/* .projectCounter {
+    box-sizing: border-box;
+    position: absolute;
+    width: 123px;
+    height: 52px;
+    left: 1034px;
+    top: -1px;
+    background: #ffffff;
+    border: 1px solid #d9d9d9;
+    border-radius: 0px 0px 8px 0px;
+} */
