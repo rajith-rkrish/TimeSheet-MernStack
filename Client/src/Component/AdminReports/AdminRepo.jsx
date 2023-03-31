@@ -2,10 +2,11 @@ import React from "react";
 import NavBar from "../NavbarAnim/NavAnime";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Dropdown from "../DropDown/dropDown";
-import styled from "styled-components";
-// import styled from "styled-component";
 import "../AdminReports/AdminRepo.css";
+import Dropdown from "react-bootstrap/Dropdown";
+import DropdownButton from "react-bootstrap/DropdownButton";
+import BarChart from "../BarChart/BarChart";
+import styled from "styled-components";
 
 function AdminRepo() {
   return (
@@ -18,22 +19,58 @@ function AdminRepo() {
           <div className="center flex grid">
             <div className="sorter">
               <div className="Drop1">
-                <Dropdown />
+                <DropdownButton id="dropdown-basic-button" title="Project">
+                  <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                  <Dropdown.Item href="#/action-2">
+                    Another action
+                  </Dropdown.Item>
+                  <Dropdown.Item href="#/action-3">
+                    Something else
+                  </Dropdown.Item>
+                </DropdownButton>
               </div>
               <div className="Drop2">
-                <Dropdown />
+                <DropdownButton id="dropdown-basic-button" title="Team Member">
+                  <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                  <Dropdown.Item href="#/action-2">
+                    Another action
+                  </Dropdown.Item>
+                  <Dropdown.Item href="#/action-3">
+                    Something else
+                  </Dropdown.Item>
+                </DropdownButton>
               </div>
               <div className="Drop3">
-                <Dropdown />
+                <DropdownButton id="dropdown-basic-button" title="Task">
+                  <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                  <Dropdown.Item href="#/action-2">
+                    Another action
+                  </Dropdown.Item>
+                  <Dropdown.Item href="#/action-3">
+                    Something else
+                  </Dropdown.Item>
+                </DropdownButton>
               </div>
-              <div className="planDiv"></div>
+              {/* <div className="planDiv"></div> */}
               <button className="BluButton">
                 <div className="fontBlue">Apply</div>
               </button>
             </div>
-            <div className="firstBox">
-              <div className="firstHeader"></div>
+
+            <div className="whitebox2">
+              <div className="firstBox">
+                <div className="firstHeader">
+                  <Headerfont1 style={{marginLeft:"10px",marginTop:"10px"}}>Total Time</Headerfont1>
+                </div>
+                <div
+                  className="bar1"
+                  style={{ marginLeft: "35px", marginTop: "-35px" }}
+                >
+                  <BarChart />
+                </div>
+              </div>
             </div>
+            <button className="Download">Download pdf</button>
           </div>
         </Col>
       </Row>
@@ -43,4 +80,12 @@ function AdminRepo() {
 
 export default AdminRepo;
 
-const fontBlue = styled.button``;
+const Headerfont1 = styled.p`
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #505558;
+`;
