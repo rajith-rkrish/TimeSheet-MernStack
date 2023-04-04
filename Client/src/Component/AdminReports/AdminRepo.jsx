@@ -7,8 +7,21 @@ import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import BarChart from "../BarChart/BarChart";
 import styled from "styled-components";
-
+import { useState, useEffect } from "react";
+import Calendar from "../employeTime/calendar.svg";
 function AdminRepo() {
+  const [date, setDate] = useState(null);
+  useEffect(() => {
+    var today = new Date();
+    const Curentdate =
+      today.getDate() +
+      "-" +
+      (today.getMonth() + 1) +
+      "-" +
+      today.getFullYear();
+    setDate(Curentdate);
+  }, []);
+
   return (
     <>
       <Row>
@@ -17,6 +30,10 @@ function AdminRepo() {
         </Col>
         <Col>
           <div className="center flex grid">
+            <div className="headerDate">
+              <img className="cals" src={Calendar} alt="cDate" />
+              <div className="CrDate">{date}</div>
+            </div>
             <div className="sorter">
               <div className="Drop1">
                 <DropdownButton id="dropdown-basic-button" title="Project">
@@ -60,7 +77,11 @@ function AdminRepo() {
             <div className="whitebox2">
               <div className="firstBox">
                 <div className="firstHeader">
-                  <Headerfont1 style={{marginLeft:"10px",marginTop:"10px"}}>Total Time</Headerfont1>
+                  <Headerfont1
+                    style={{ marginLeft: "10px", marginTop: "10px" }}
+                  >
+                    Total Time
+                  </Headerfont1>
                 </div>
                 <div
                   className="bar1"

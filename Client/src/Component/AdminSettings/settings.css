@@ -1,0 +1,72 @@
+.container-Head {
+  position: absolute;
+  top: 100px;
+  left: 87px;
+}
+.container-Body {
+}
+.semi-Head {
+  background: #e4eaee;
+  border: 1px solid #d9d9d9;
+  border-radius: 7px 7px 0px 0px;
+  width: 67vw;
+  height: 65px;
+}
+.semi-body {
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 0px;
+  /* height: 200px; */
+  width: 67vw;
+}
+.checkbox-controls {
+  /* margin-left: 50px; */
+}
+.form-check-inline {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 0;
+  margin-right: 0.75rem;
+  margin-left: 50px;
+  margin-top: 40px;
+}
+.form-check-label {
+  margin-bottom: 0;
+  color: rgb(0, 163, 255);
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 500;
+}
+.body-header {
+  background: #e4eaee;
+  border: 1px solid #d9d9d9;
+  border-radius: 7px 7px 0px 0px;
+  width: 67vw;
+  height: 45px;
+  position: absolute;
+  top: 350px;
+  left: 90px;
+  text-align: end;
+}
+.Body-Main {
+  width: 67vw;
+  height: 455px;
+  box-shadow: 0px 5px 8px -3px #00000057;
+  position: absolute;
+  top: 395px;
+  left: 88px;
+}
+.ApproverBtn {
+  background: #00a3ff;
+  border-radius: 0px 5px 0px 0px;
+  width: 169px;
+  height: 45px;
+  color: white;
+  font-family: "inter";
+  /* position: absolute; */
+  left: 1116px;
+  /* margin-left: 1085px; */
+  margin-top: -1px;
+}

@@ -1,0 +1,69 @@
+.addingMember {
+  width: 170px;
+  height: 40px;
+  position: absolute;
+  bottom: 0%;
+  background: #c5eaff;
+  border-radius: 5px;
+  display: flex;
+  flex-flow: row;
+  left: 62px;
+  right: 0%;
+  top: 5%;
+}
+.plus_img {
+  width: 20px;
+  height: 20px;
+  /* margin: 10px; */
+  margin-left: 1;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+button {
+}
+button:focus {
+  outline: none;
+  outline: none;
+}
+.insideAdding {
+}
+.boxer-app {
+}
+.header-boxer {
+  background: #e4eaee;
+  border: 1px solid #d9d9d9;
+  border-radius: 7px 7px 0px 0px;
+  width: 65vw;
+  height: 42px;
+  position: absolute;
+  left: 60px;
+  top: 113px;
+}
+.body-boxer {
+}
+.header-white {
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 0px;
+  width: 65vw;
+  height: 42px;
+  position: absolute;
+  left: 60px;
+  top: 154px;
+  display: flex;
+  flex-flow: row;
+}
+.down-arrow {
+  width: 10px;
+  height: 10px;
+
+  margin-top: 14px;
+  margin-left: 5px;
+}
+.smallBars {
+  display: flex;
+  flex-flow: row;
+  margin-top: 0px;
+  flex-grow: 1;
+  margin-left: 90px;
+}

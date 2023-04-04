@@ -41,7 +41,6 @@ function AdminPro() {
                   >
                     <Form.Control type="text" placeholder="Description" />
                   </Form.Group>
-                 
                 </Form>
               </Col>
               <Col>
@@ -71,7 +70,7 @@ function AdminPro() {
                         <Form.Control type="date" placeholder="mm/dd/yyyy" />
                       </Form.Group>
                     </Col>
-                    <Col>
+                    <Col style={{marginLeft:"-10px"}}>
                       <Form.Group
                         className="mb-3"
                         controlId="exampleForm.ControlInput1"
@@ -86,6 +85,11 @@ function AdminPro() {
                       </Form.Group>
                     </Col>
                   </Row>
+                  <div className="textLeft">
+                    <BluBtn>
+                      <BtnFont>Submit</BtnFont>
+                    </BluBtn>
+                  </div>
                 </Form>
               </Col>
             </Row>
@@ -105,4 +109,20 @@ const Headerfont1 = styled.div`
   font-size: 16px;
   line-height: 19px;
   color: #505558;
+`;
+
+const BluBtn = styled.button`
+  background: #00a3ff;
+  border-radius: 10px;
+  width: 140px;
+  height: 41px;
+`;
+
+const BtnFont = styled.div`
+  color: #fff;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
 `;

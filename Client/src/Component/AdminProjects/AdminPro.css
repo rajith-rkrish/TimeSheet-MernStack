@@ -1,7 +1,7 @@
 .firstHeader1 {
   box-sizing: border-box;
   /* position: absolute; */
-  width: 65vw;
+  width: 57vw;
   height: 42px;
   left: 203px;
   top: 165px;
@@ -12,7 +12,7 @@
 }
 .inputBox {
   position: absolute;
-  width: 65vw;
+  width: 57vw;
   /* min-width: 547px; */
   height: 430px;
   left: -55%;
@@ -28,6 +28,23 @@
   align-items: center;
   justify-content: center;
 }
-.inputer{
-    margin-top: -180px;
+@media (max-width: 1100px) {
+  .inputBox {
+    position: absolute;
+    left: -37%;
+  }
+}
+.inputer {
+  margin-top: -180px;
+}
+.textLeft {
+  text-align: end;
+  margin-top: 10px;
+}
+.form-control {
+}
+@media (max-width: 1100px) {
+  .form-control {
+    margin-right: -50px !important;
+  }
 }
