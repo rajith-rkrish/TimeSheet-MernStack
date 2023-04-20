@@ -10,8 +10,8 @@ import Dash from "../src/Component/AdminDash/DashBored";
 import Adding from "./Component/Adding/Adding";
 import Admins from "./Component/AdminComponent/Admin";
 import AdminPro from "./Component/AdminProjects/AdminPro";
-import AdminReports from "./Component/AdminReports/AdminRepo"
-import AdminSettings from "./Component/AdminSettings/AdminSett"
+import AdminReports from "./Component/AdminReports/AdminRepo";
+import AdminSettings from "./Component/AdminSettings/AdminSett";
 import AdminTeam from "./Component/AdminTeam/AdminTeam";
 function App() {
   return (
@@ -28,6 +28,7 @@ function App() {
           <Route path="/Admin/Reports" element={<AdminReports />} />
           <Route path="/Admin/Settings" element={<AdminSettings />} />
           <Route path="/Admin/Team" element={<AdminTeam />} />
+         
         </Routes>
       </BrowserRouter>
       {/* <Adding /> */}

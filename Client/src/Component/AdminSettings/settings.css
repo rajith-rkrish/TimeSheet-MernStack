@@ -20,7 +20,7 @@
   width: 67vw;
 }
 .checkbox-controls {
-  /* margin-left: 50px; */
+  margin-bottom: 20px;
 }
 .form-check-inline {
   display: -ms-inline-flexbox;
@@ -52,7 +52,7 @@
 }
 .Body-Main {
   width: 67vw;
-  height: 455px;
+  height: 425px;
   box-shadow: 0px 5px 8px -3px #00000057;
   position: absolute;
   top: 395px;

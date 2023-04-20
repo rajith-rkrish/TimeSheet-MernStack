@@ -8,13 +8,20 @@ const cors = require("cors");
 Connection();
 
 const app = express();
+
 app.use(cors());
+
 app.use(express.json());
+
 app.use(express.urlencoded({ extended: false }));
 
 app.use("/", require("./routes/userRoute.js"));
+
 app.use("/", require("./routes/timeSheetRoute"));
+
 app.use("/", require("./routes/employeStatusRoute"));
+
+app.use("/", require("./routes/userPostingRoute.js"));
 
 console.log("Entering the index.js")
 

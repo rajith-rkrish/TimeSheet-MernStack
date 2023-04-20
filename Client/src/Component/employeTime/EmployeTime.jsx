@@ -3,7 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { Container } from "react-bootstrap";
 import styled from "styled-components";
-import Navbar from "../NavBar/Navbar";
+import Navbar from "../EmpNavbar/EmpAnimeNav";
 import "../employeTime/employeTime.css";
 import { useState, useEffect } from "react";
 import calendar from "../employeTime/calendar.svg";
@@ -97,7 +97,7 @@ function EmployeTime() {
   };
 
   return (
-    <Row>
+    <Row style={{ marginLeft: "-1px" }}>
       <Navbar />
       {/* <h1 style={{ textAlign: "center" }}>{date}</h1> */}
       <div className="Cdate flexer">

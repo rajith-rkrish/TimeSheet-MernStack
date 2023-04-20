@@ -7,7 +7,7 @@
   border-radius: 5px;
   display: flex;
   flex-flow: row;
-  left: 62px;
+  left: 50px;
   right: 0%;
   top: 5%;
 }
@@ -36,7 +36,7 @@ button:focus {
   width: 65vw;
   height: 42px;
   position: absolute;
-  left: 60px;
+  left: 45px;
   top: 113px;
 }
 .body-boxer {
@@ -48,7 +48,7 @@ button:focus {
   width: 65vw;
   height: 42px;
   position: absolute;
-  left: 60px;
+  left: 45px;
   top: 154px;
   display: flex;
   flex-flow: row;

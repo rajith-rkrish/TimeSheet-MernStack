@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Navbar from "../NavBar/Navbar";
+import Navbar from "../EmpNavbar/EmpAnimeNav";
 
 function Employe() {
   const navigate = useNavigate();

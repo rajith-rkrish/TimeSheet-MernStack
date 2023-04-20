@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../NavBar/Navbar";
+import Navbar from "../EmpNavbar/EmpAnimeNav";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import calendar from "../employeTime/calendar.svg";
@@ -11,12 +11,6 @@ import { Calendar, DateRangePicker } from "react-date-range";
 import axios from "axios";
 import { useState, useEffect } from "react";
 const moment = require("moment");
-// import { addDays } from "date-fns";
-// import { useState } from "react";
-// import useState from "react";
-
-// import { Await } from "react-router-dom";
-// import { startSession } from "../../../../Server/Model/userModel";
 function EmployeStatus() {
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
@@ -76,7 +70,7 @@ function EmployeStatus() {
         "DD/MM/YYYY"
       ).toISOString();
       const productDate = moment(product.date, "DD/MM/YYYY").toISOString();
-     
+
       console.log("Products Date : " + productDate);
       console.log("Starting Date : " + startDate);
       console.log("Ending Date : " + endDate);
@@ -90,9 +84,9 @@ function EmployeStatus() {
   };
 
   return (
-    <Row>
+    <Row style={{ marginLeft: "-1px" }}>
       <Navbar />
-      <div className="clicking"></div>;
+      <div className="clicking"></div>
       <h1 style={{ textAlign: "center" }}>{}</h1>
       <div className="cdater flexer" onClick={() => setShowCal(!showCal)}>
         <div className="Cimg">
