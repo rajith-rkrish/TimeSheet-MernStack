@@ -3,7 +3,7 @@
   position: absolute;
   width: 1309px;
   height: 724px;
-  left: 465px;
+  left: 257px !important;
   top: 130px;
   background: #f1f3f4;
   box-shadow: 0px 3px 3px rgb(149 157 165 / 25%);
@@ -78,8 +78,8 @@
   position: absolute;
   width: 170px;
   height: 44px;
-  left: 529px;
-  top: 55px;
+  left: 326px;
+  top: 68px;
   background: #ffffff;
   border: 1px solid #d9d9d9;
   border-radius: 4px;
@@ -557,11 +557,11 @@
 }
 .projectInput {
   box-sizing: border-box;
-  position: absolute;
+  position: relative;
   width: 1035px;
   height: 52px;
   left: 74px;
-  top: 462px;
+  top: 445px;
   background: #ffffff;
   border: 1px solid #d9d9d9;
   border-radius: 0px;
@@ -719,3 +719,107 @@
 svg {
   fill: #00a3ff !important;
 } */
+.react-ios-time-picker {
+  /* margin-bottom: 62px; */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 11px 15px #0005;
+  position: absolute;
+  /* bottom: 803px; */
+  /* margin-left: 25px; */
+  top: -1023px;
+}
+
+/* Rectangle 1432 */
+@media only screen and (min-width: 1023px) and (max-width: 1200px) {
+  .react-ios-time-picker-input {
+    position: relative;
+    left: 200px;
+  }
+  .projectHeader {
+    width: 600px;
+    left: 64px;
+  }
+  .projectInput {
+    width: 513px;
+  }
+  .projectInput {
+    position: relative;
+    left: 63px;
+  }
+  .Cdate {
+    left: 266px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .react-ios-time-picker-input {
+    position: relative;
+    left: 240px;
+  }
+  .projectHeader {
+    width: 700px;
+    left: 64px;
+  }
+  .projectInput {
+    width: 581px;
+  }
+  .projectInput {
+    position: relative;
+    left: 63px;
+  }
+  .Cdate {
+    left: 266px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .react-ios-time-picker-input {
+    position: relative;
+    left: 240px;
+  }
+  .projectHeader {
+    width: 700px;
+    left: 64px;
+  }
+  .projectInput {
+    width: 581px;
+  }
+  .projectInput {
+    position: relative;
+    left: 63px;
+  }
+  .Cdate {
+    left: 266px;
+  }
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {
+  .react-ios-time-picker-input {
+    position: relative;
+    left: 240px;
+  }
+  .projectHeader {
+    width: 804px;
+    left: 100px;
+  }
+  .projectInput {
+    width: 687px;
+    left: 100px !important;
+  }
+  .projectInput {
+    position: relative;
+    left: 63px;
+  }
+  .Cdate {
+    left: 266px;
+  }
+  .tableHeader {
+    width: 804px;
+    left: 100px;
+  }
+  .tableFooter {
+    width: 804px;
+    left: 100px;
+  }
+}

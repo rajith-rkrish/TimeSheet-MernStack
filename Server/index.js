@@ -21,7 +21,9 @@ app.use("/", require("./routes/timeSheetRoute"));
 
 app.use("/", require("./routes/employeStatusRoute"));
 
-app.use("/", require("./routes/userPostingRoute.js"));
+app.use("/", require("./routes/userPostingRoute"));
+
+app.use("/", require("./routes/forgotRoute"));
 
 console.log("Entering the index.js")
 

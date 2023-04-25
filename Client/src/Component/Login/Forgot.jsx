@@ -2,79 +2,51 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { Container, NavLink, Row } from "react-bootstrap";
 import { redirect, useNavigate } from "react-router-dom";
-import JKL from "../Login/JKL.svg";
-import "../Login/login.css";
+import "../Login/forgot.css";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Employe from "../employe/Employe";
-function Login() {
+function Forgot() {
   const [email, setEmail] = useState("");
-  const [psw, setPsw] = useState("");
-
   const navigate = useNavigate();
-
-  const onInputChangeEmail = (e) => {
-    setEmail((prevState) => ({
-      ...prevState,
-      [e.target.name]: e.target.value,
-    }));
-  };
-  const onInputChangePsw = (e) => {
-    setPsw((prevState) => ({
-      ...prevState,
-      [e.target.name]: e.target.value,
-    }));
-  };
   const toastSuccess = () => {
-    toast.success("Login Successfull..!", { position: "top-center" });
+    toast.success("Successfull..!", { position: "top-center" });
   };
 
   const toastError = () => {
-    toast.error("Login Faild..!", { position: "top-center" });
+    toast.error("Faild..!", { position: "top-center" });
   };
-
-  const headers = {
-    "Content-Type": "application/json;charset=UTF-8",
-    "Access-Control-Allow-Origin": "*",
-  };
-  // const { emailF, pswF } = signup;
-
   const submit = async (e) => {
     e.preventDefault();
     try {
       await axios
-        .post("http://localhost:5000/getting", { email, psw })
+        .put("http://localhost:5000/forgot", { email })
         .then((res) => {
           console.log(res.data);
-          if (res.data == "exist") {
+          if (res.data === "exist") {
             console.log("Log in id : " + res.data);
             toastSuccess();
             setTimeout(() => {
               // 👇 Redirects to about page, note the `replace: true`
-              navigate("/employe", { replace: true });
+              navigate("/", { replace: true });
             }, 3000);
-          } else if (res.data == "notexist") {
+          } else if (res.data === "notexist") {
             toastError();
           }
         })
-        .catch((e) => {
-          alert("Wrong Details");
-        });
     } catch (e) {
       alert("Wrong Details");
     }
   };
-
   return (
     <>
       <Container>
         <Row className="sizing">
-          <div className="jkl">
-            <img src={JKL} alt="JKL" />
+          <div className="resetHeader">Forgot Your Password</div>
+          <div className="resetPara">
+            Enter your email and we'll send you random password
           </div>
-          <div className="header35">Log In To Time Sheet</div>
-          <Row className="input">
+          <Row className="inputer1">
             <div className="upperin">
               <input
                 className="in"
@@ -87,18 +59,6 @@ function Login() {
                 value={email}
               />
             </div>
-            <div className="downin">
-              <input
-                className="in"
-                type="password"
-                placeholder="Password"
-                onChange={(e) => {
-                  setPsw(e.target.value);
-                }}
-                name="psw"
-                value={psw}
-              />
-            </div>
           </Row>
           <Row>
             <Btn type="submit" onClick={submit}>
@@ -106,12 +66,6 @@ function Login() {
             </Btn>
             <ToastContainer />
           </Row>
-          <div className="forgot">
-            <a href="/forgot/psw">Forgot Password</a>
-          </div>
-          <div className="resets">
-            <a href="/reset/psw">Reset Password</a>
-          </div>
         </Row>
       </Container>
     </>
@@ -123,23 +77,20 @@ const Btn = styled.button`
   padding-bottom: 9px;
   padding-left: 16px;
   padding-right: 12px;
-  background-color: #0080c8;
+  background-color: rgb(120 124 126 / 60%);
   color: #fcfcfc;
   font-size: 14px;
   font-weight: 400;
   border-radius: 4px;
   border: 2px solid transparent;
   position: relative;
-  /* top: 362px; */
   width: 374px;
   height: 45px;
   display: block;
   margin: auto;
-  /* left: -178px; */
-
-  left: -102px;
-  /* top: 113px; */
-  top: 347px;
+  top: 310px;
+  align-items: center;
+  right: -396px;
 
   &:hover {
     background-color: #229af0;
@@ -147,11 +98,6 @@ const Btn = styled.button`
   &:active {
     background-color: #0080c8;
   }
-
-  @media (min-width: 1023px) and (max-width: 1200px) {
-    left: -167px;
-    top: 350px;
-  }
 `;
 
-export default Login;
+export default Forgot;

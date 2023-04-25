@@ -1,0 +1,43 @@
+.inputer1 {
+  position: relative;
+  width: 460px;
+  height: 79px;
+  top: 347px;
+  display: block;
+  margin: auto;
+  align-items: center;
+  left: -277px;
+}
+.resetHeader {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "inter";
+  position: relative;
+  top: 234px;
+  left: 390px;
+}
+.resetPara {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "inter";
+  color: rgb(120 124 126 / 45%);
+  width: 26%;
+  text-align: left;
+  position: relative;
+  top: 271px;
+  left: 200px;
+}
+
+@media screen and (min-width: 1023px) and (max-width: 1200px) {
+  .inputer1 {
+    position: relative !important;
+    left: -165px !important;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1200px) {
+  .inputer1 {
+    position: relative !important;
+    left: -278px !important;
+  }
+}

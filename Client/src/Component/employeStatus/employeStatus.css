@@ -27,7 +27,7 @@
   position: absolute;
   width: 170px;
   height: 44px;
-  left: 529px;
+  left: 323px;
   top: 55px;
   background: #ffffff;
   border: 1px solid #d9d9d9;
@@ -70,4 +70,37 @@
 }
 .red {
   color: red !important;
+}
+
+@media only screen and (min-width: 1023px) and (max-width: 1200px) {
+  .tableinputs {
+    left: 60px !important;
+    width: 600px !important;
+  }
+  .tablecounter5 {
+    width: 140px !important;
+    left: 521px !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .tableinputs {
+    left: 60px !important;
+    width: 557px !important;
+  }
+  .tablecounter5 {
+    width: 140px !important;
+    left: 616px !important;
+  }
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {
+  .tableinputs {
+    left: 99px !important;
+    width: 711px !important;
+  }
+  .tablecounter5 {
+    width: 154px !important;
+    left: 751px !important;
+  }
 }

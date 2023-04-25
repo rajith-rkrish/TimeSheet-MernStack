@@ -165,103 +165,105 @@ function EmployeProject(props) {
     }
   };
   return (
-    <div>
-      <div className="project">
-        <div className="projectHeader">
-          <Profont>Projects</Profont>
-          <Profont className="projectStart">Start</Profont>
-          <Profont className="projectStop">Stop</Profont>
-          <Profont className="projectTotal">Total</Profont>
-        </div>
-        <div>
-          <div className="projectInput">
-            <Box sx={{ minWidth: 120 }}>
-              <FormControl fullWidth>
-                <InputLabel id="demo-simple-select-label">
-                  Select Project
-                </InputLabel>
-                <Select
-                  labelId="demo-simple-select-label"
-                  id="demo-simple-select"
-                  value={project}
-                  label="project"
-                  name="proName"
-                  onChange={(e) => {
-                    setProject(e.target.value);
-                  }}
-                >
-                  <MenuItem index={1} value={"Project1"}>
-                    Project1
-                  </MenuItem>
-                  <MenuItem index={2} value={"Project2"}>
-                    Project2
-                  </MenuItem>
-                  <MenuItem index={3} value={"Project3"}>
-                    Project3
-                  </MenuItem>
-                </Select>
-              </FormControl>
-              <div className="start">
-                <TimePicker
-                  onChange={(time) => setStartWatch(time)}
-                  placeHolder="Start"
-                  value={start}
-                />
-              </div>
-              <div className="stop">
-                <TimePicker
-                  onChange={(time) => setStopWatch(time)}
-                  placeHolder="Stop"
-                  value={stop}
-                />
-              </div>
-            </Box>
-          </div>
-          <div className="projectCounter">
-            <ProCounter name="totalTime" value={total}>
-              {getTotalLunchTime(start, stop)}
-            </ProCounter>
-          </div>
-        </div>
-      </div>
+    <>
       <div>
-        {objectsArray.map((object, index) => {
-          console.log(objectsArray);
-          console.log("objs : " + object.proName + "  " + object.totalTime);
-          // console.log(getTotalTime(start, stop));
-          return (
-            <Row
-              key={index}
-              className="projectInput"
-              style={{
-                marginTop: "7px",
-                marginLeft: "0px",
-                marginBottom: "7px",
-              }}
-            >
-              <Box sx={{ minWidth: 120 }} key={index}>
+        <div className="project">
+          <div className="projectHeader">
+            <Profont>Projects</Profont>
+            <Profont className="projectStart">Start</Profont>
+            <Profont className="projectStop">Stop</Profont>
+            <Profont className="projectTotal">Total</Profont>
+          </div>
+          <div>
+            <div className="projectInput">
+              <Box sx={{ minWidth: 120 }}>
                 <FormControl fullWidth>
-                  <InputLabel id={`demo-simple-select-label-${index}`}>
+                  <InputLabel id="demo-simple-select-label">
                     Select Project
                   </InputLabel>
                   <Select
-                    labelId={`demo-simple-select-label-${index}`}
-                    id={`demo-simple-select-${index}`}
-                    value={object.proName}
-                    onChange={() => {}}
+                    labelId="demo-simple-select-label"
+                    id="demo-simple-select"
+                    value={project}
+                    label="project"
+                    name="proName"
+                    onChange={(e) => {
+                      setProject(e.target.value);
+                    }}
                   >
-                    <MenuItem value={"Project1"}>Project1</MenuItem>
-                    <MenuItem value={"Project2"}>Project2</MenuItem>
-                    <MenuItem value={"Project3"}>Project3</MenuItem>
+                    <MenuItem index={1} value={"Project1"}>
+                      Project1
+                    </MenuItem>
+                    <MenuItem index={2} value={"Project2"}>
+                      Project2
+                    </MenuItem>
+                    <MenuItem index={3} value={"Project3"}>
+                      Project3
+                    </MenuItem>
                   </Select>
                 </FormControl>
+                <div className="start">
+                  <TimePicker
+                    onChange={(time) => setStartWatch(time)}
+                    placeHolder="Start"
+                    value={start}
+                  />
+                </div>
+                <div className="stop">
+                  <TimePicker
+                    onChange={(time) => setStopWatch(time)}
+                    placeHolder="Stop"
+                    value={stop}
+                  />
+                </div>
               </Box>
-              <div className="projectCounter1">
-                <ProCounter>{object.totalTime}</ProCounter>
-              </div>
-            </Row>
-          );
-        })}
+            </div>
+            <div className="projectCounter">
+              <ProCounter name="totalTime" value={total}>
+                {getTotalLunchTime(start, stop)}
+              </ProCounter>
+            </div>
+          </div>
+        </div>
+        <div>
+          {objectsArray.map((object, index) => {
+            console.log(objectsArray);
+            console.log("objs : " + object.proName + "  " + object.totalTime);
+            // console.log(getTotalTime(start, stop));
+            return (
+              <Row
+                key={index}
+                className="projectInput"
+                style={{
+                  marginTop: "7px",
+                  marginLeft: "0px",
+                  marginBottom: "7px",
+                }}
+              >
+                <Box sx={{ minWidth: 120 }} key={index}>
+                  <FormControl fullWidth>
+                    <InputLabel id={`demo-simple-select-label-${index}`}>
+                      Select Project
+                    </InputLabel>
+                    <Select
+                      labelId={`demo-simple-select-label-${index}`}
+                      id={`demo-simple-select-${index}`}
+                      value={object.proName}
+                      onChange={() => {}}
+                    >
+                      <MenuItem value={"Project1"}>Project1</MenuItem>
+                      <MenuItem value={"Project2"}>Project2</MenuItem>
+                      <MenuItem value={"Project3"}>Project3</MenuItem>
+                    </Select>
+                  </FormControl>
+                </Box>
+                <div className="projectCounter1">
+                  <ProCounter>{object.totalTime}</ProCounter>
+                </div>
+              </Row>
+            );
+          })}
+        </div>
       </div>
       <div className="spacing">
         <div className="addingBtn">
@@ -276,7 +278,7 @@ function EmployeProject(props) {
           <ToastContainer />
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
@@ -295,6 +297,9 @@ const ProCounter = styled.div`
     padding-left: 8px;
     font-size: 18px;
   }
+  @media (min-width: 1023px) and (max-width: 1200px) {
+    padding-left: 18px;
+  } ;
 `;
 const Profont = styled.div`
   position: absolute;
@@ -322,6 +327,7 @@ const Wfont = styled.div`
   line-height: 22px;
   /* identical to box height */
   color: #ffffff;
+
   @media (min-width: 768px) and(max-width:992px) {
     font-size: 16px;
   }

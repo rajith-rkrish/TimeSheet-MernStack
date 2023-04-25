@@ -183,6 +183,15 @@ const Fontwo = styled.div`
   font-size: 16px;
   line-height: 19px;
   color: #2b2b2b;
+  @media (min-width:1200px) and (max-width:1400px)
+  {
+    left: 604px;
+  }
+ @media (min-width:1400px) and (max-width:1600px)
+  {
+    left: 703px;
+  }
+   
 `;
 const Logfont = styled.div`
   position: absolute;

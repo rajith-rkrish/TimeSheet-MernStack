@@ -2,6 +2,7 @@ const user = require("../Model/userModel");
 const asyncHandler = require("express-async-handler");
 const nodemailer = require("nodemailer");
 
+
 const postingUser = asyncHandler(async (req, res) => {
   const { email, name, ReporterManager } = req.body;
 

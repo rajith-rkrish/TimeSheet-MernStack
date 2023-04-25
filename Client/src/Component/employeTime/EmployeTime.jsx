@@ -111,25 +111,27 @@ function EmployeTime() {
           <div className="tableHeader">
             <Font16>Time Sheet</Font16>
           </div>
-          <div className="tableinput1">
-            <Logfont>Log Time</Logfont>
-            <div>
-              <TimePicker
-                onChange={(time) => setLoginTime(time)}
-                placeHolder="Login"
-                value={login}
-              />
+          <div className="table1st">
+            <div className="tableinput1">
+              <Logfont>Log Time</Logfont>
+              <div>
+                <TimePicker
+                  onChange={(time) => setLoginTime(time)}
+                  placeHolder="Login"
+                  value={login}
+                />
+              </div>
+              <div className="logout">
+                <TimePicker
+                  onChange={(time) => setLogoutTime(time)}
+                  placeHolder="Logout"
+                  value={logout}
+                />
+              </div>
             </div>
-            <div className="logout">
-              <TimePicker
-                onChange={(time) => setLogoutTime(time)}
-                placeHolder="Logout"
-                value={logout}
-              />
+            <div className="tablecounter">
+              <Counter>{getTotalTime(login, logout)}</Counter>
             </div>
-          </div>
-          <div className="tablecounter">
-            <Counter>{getTotalTime(login, logout)}</Counter>
           </div>
           <div className="tableinput2">
             <Lunch>Lunch</Lunch>
@@ -234,6 +236,9 @@ const Counter = styled.div`
     font-size: 18px;
     padding-left: 10px;
   }
+  @media (min-width: 1023px) and (max-width: 1200px) {
+    padding-left: 15px;
+  }
 `;
 const Counter1 = styled.div`
   font-family: "Inter";
@@ -247,5 +252,8 @@ const Counter1 = styled.div`
   @media (min-width: 768px) and (max-width: 992px) {
     padding-left: 7px;
     font-size: 18px;
+  }
+  @media (min-width: 1023px) and (max-width: 1200px) {
+    padding-left: 14px;
   }
 `;

@@ -56,6 +56,7 @@
   left: 257px;
   display: block;
   margin: auto;
+  left: 291px;
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .input {
@@ -116,21 +117,8 @@ border-radius: 3px 3px 0px 0px;
   position: relative;
 
   top: 411px;
-  left: -449px;
+  left: -486px;
   /* top: 630px; */
-}
-@media (min-width: 768px) and (max-width: 992px) {
-  .forgot {
-    left: -24%;
-    top: 359px;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1200px) {
-  .forgot {
-    left: -42%;
-    top: 410px;
-  }
 }
 
 .forgot a {
@@ -141,4 +129,25 @@ border-radius: 3px 3px 0px 0px;
   /* overflow: hidden; */
   size: 100%;
   text-align: center;
+}
+.resets {
+  position: relative;
+  top: 439px;
+  left: -377px;
+}
+.resets a {
+  color: #0080c8 !important;
+}
+
+@media only screen and (min-width: 1023px) and (max-width:1200px) {
+  .resets {
+    position: relative;
+    top: 361px !important;
+    left: 549px !important;
+  }
+  .forgot {
+    position: relative;
+    /* top: 361px !important; */
+    left: -534px !important;
+  }
 }

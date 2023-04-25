@@ -13,6 +13,9 @@ import AdminPro from "./Component/AdminProjects/AdminPro";
 import AdminReports from "./Component/AdminReports/AdminRepo";
 import AdminSettings from "./Component/AdminSettings/AdminSett";
 import AdminTeam from "./Component/AdminTeam/AdminTeam";
+import Forgot from "./Component/Login/Forgot";
+import Reset from "./Component/Changepsw/Changepsw";
+
 function App() {
   return (
     <>
@@ -28,7 +31,8 @@ function App() {
           <Route path="/Admin/Reports" element={<AdminReports />} />
           <Route path="/Admin/Settings" element={<AdminSettings />} />
           <Route path="/Admin/Team" element={<AdminTeam />} />
-         
+          <Route path="/forgot/psw" element={<Forgot />} />
+          <Route path="/reset/psw" element={<Reset />} />
         </Routes>
       </BrowserRouter>
       {/* <Adding /> */}
