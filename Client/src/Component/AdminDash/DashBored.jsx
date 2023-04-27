@@ -22,9 +22,9 @@ import axios from "axios";
 function DashBored() {
   const [date, setDate] = useState(null);
   const [project, setProject] = useState([]);
-  const [uniqueProject, setUniqueProject] = useState();
+  const [uniqueProject, setUniqueProject] = useState([]);
   const [values, setValues] = useState();
-  const [data, setData] = useState([{ cDate: "", totalTime: "", proName: "" }]);
+  // const [data, setData] = useState([]);
   const [Dtls, setDtls] = useState([]);
 
   useEffect(() => {
@@ -41,6 +41,7 @@ function DashBored() {
     try {
       axios.get("http://localhost:5000/employeStatus").then((res) => {
         if (res.data) {
+          setUniqueProject(res.data);
           const projectSet = new Set();
           res.data.forEach((element) => {
             element.projects.forEach((ele) => {
@@ -56,9 +57,28 @@ function DashBored() {
     }
   }, []);
   // console.log("Project Unique : " + values);
+  const projectDetails = (projectName) => {
+    const objer = [];
+    uniqueProject.forEach((element) => {
+      element.projects.forEach((ele) => {
+        if (ele.proName === projectName) {
+          const objects = {
+            cDate: element.cDate,
+            totalTime: ele.totalTime,
+            proName: projectName,
+          };
+          objer.push(objects);
+          console.log("VALUES LKJ: " + objects.cDate);
+        }
+      });
+    });
+    setDtls(objer);
+  };
 
-  const projectDetails = () => {
-    // console.log("projectDetails");
+  const handleSelectChange = (obj) => {
+    setValues(obj);
+    projectDetails(obj);
+    console.log("entering handleSubmit...." + obj);
   };
 
   return (
@@ -88,13 +108,14 @@ function DashBored() {
                   name="proName"
                   onChange={(e) => {
                     setValues(e.target.value);
+                    handleSelectChange(e.target.value);
                   }}
                 >
                   {project ? (
                     project.map((obj, index) => (
                       <MenuItem
                         key={index}
-                        onClick={projectDetails()}
+                        // onClick={handleSelectChange(e.target.value)}
                         className="labels"
                         value={obj}
                       >
@@ -123,7 +144,7 @@ function DashBored() {
                 </div>
               </div>
               <div>
-                <BarChart />
+                <BarChart data={Dtls} />
               </div>
             </div>
           </div>
