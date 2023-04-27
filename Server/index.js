@@ -4,7 +4,6 @@ const Connection = require("./Database/db.js");
 const port = process.env.PORT || 5000;
 const cors = require("cors");
 
-
 Connection();
 
 const app = express();
@@ -25,9 +24,10 @@ app.use("/", require("./routes/userPostingRoute"));
 
 app.use("/", require("./routes/forgotRoute"));
 
-console.log("Entering the index.js")
+app.use("/", require("./routes/changePswRoute"));
+
+console.log("Entering the index.js");
 
 app.listen(port, () => {
   console.log(`server is running on port ${port}`);
 });
-

@@ -1,16 +1,48 @@
 import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
+import { redirect, useNavigate } from "react-router-dom";
 import Col from "react-bootstrap/Col";
 import styled from "styled-components";
 import "../Changepsw/Changepsw.css";
+import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 function ChangePsw() {
   const [email, setEmail] = useState("");
   const [cPsw, setCpsw] = useState("");
   const [newPsw, setNewPsw] = useState("");
 
-  const Submit = () => {};
+  const navigate = useNavigate();
+
+  const toastSuccess = () => {
+    toast.success("Successfull..!", { position: "top-center" });
+  };
+
+  const toastError = () => {
+    toast.error("Faild..!", { position: "top-center" });
+  };
+
+  const Submit = async (e) => {
+    e.preventDefault();
+
+    try {
+      await axios
+        .put("http://localhost:5000/changePsw", { email, cPsw, newPsw })
+        .then((res) => {
+          if (res.data == "exist") {
+            toastSuccess();
+            setTimeout(() => {
+              // 👇 Redirects to about page, note the `replace: true`
+              navigate("/", { replace: true });
+            }, 3000);
+          } else {
+            toastError();
+          }
+        });
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   return (
     <>
@@ -57,7 +89,7 @@ function ChangePsw() {
             </div>
           </Row>
           <Row>
-            <Btn type="submit" onClick={Submit()}>
+            <Btn type="submit" onClick={Submit}>
               Login
             </Btn>
             <ToastContainer />

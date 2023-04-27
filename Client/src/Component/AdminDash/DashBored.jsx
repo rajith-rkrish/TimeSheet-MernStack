@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import NavBar from "../NavbarAnim/NavAnime";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -17,19 +17,15 @@ import Container from "react-bootstrap/Container";
 import FormControl from "@mui/material/FormControl";
 import UserData from "./Data";
 import BarChart from "../BarChart/BarChart";
+import axios from "axios";
 
 function DashBored() {
   const [date, setDate] = useState(null);
-  const [project, setProject] = useState("");
-  const [userDatas, setUserData] = useState({
-    labels: UserData.map((data) => data.year),
-    datasets: [
-      {
-        label: "Users Gained",
-        data: UserData.map((data) => data.userGain),
-      },
-    ],
-  });
+  const [project, setProject] = useState([]);
+  const [uniqueProject, setUniqueProject] = useState();
+  const [values, setValues] = useState();
+  const [data, setData] = useState([{ cDate: "", totalTime: "", proName: "" }]);
+  const [Dtls, setDtls] = useState([]);
 
   useEffect(() => {
     console.log("UserData : " + UserData);
@@ -41,7 +37,30 @@ function DashBored() {
       "-" +
       today.getFullYear();
     setDate(Curentdate);
+
+    try {
+      axios.get("http://localhost:5000/employeStatus").then((res) => {
+        if (res.data) {
+          const projectSet = new Set();
+          res.data.forEach((element) => {
+            element.projects.forEach((ele) => {
+              const projectName = ele.proName;
+              projectSet.add(projectName);
+            });
+          });
+          setProject([...projectSet]); // convert Set to array and set state
+        }
+      });
+    } catch (error) {
+      console.log(error);
+    }
   }, []);
+  // console.log("Project Unique : " + values);
+
+  const projectDetails = () => {
+    // console.log("projectDetails");
+  };
+
   return (
     <>
       <Row>
@@ -64,22 +83,27 @@ function DashBored() {
                   className="labels"
                   labelId="demo-simple-select-label"
                   id="demo-simple-select"
-                  value={project}
+                  value={values}
                   label="project"
                   name="proName"
                   onChange={(e) => {
-                    setProject(e.target.value);
+                    setValues(e.target.value);
                   }}
                 >
-                  <MenuItem className="labels" index={1} value={"Project1"}>
-                    Project1
-                  </MenuItem>
-                  <MenuItem className="labels" index={2} value={"Project2"}>
-                    Project2
-                  </MenuItem>
-                  <MenuItem className="labels" index={3} value={"Project3"}>
-                    Project3
-                  </MenuItem>
+                  {project ? (
+                    project.map((obj, index) => (
+                      <MenuItem
+                        key={index}
+                        onClick={projectDetails()}
+                        className="labels"
+                        value={obj}
+                      >
+                        {obj}
+                      </MenuItem>
+                    ))
+                  ) : (
+                    <div>Loading projects...</div>
+                  )}
                 </Select>
               </FormControl>
             </Box>
